@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Website;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\About;
+use App\Models\Testimonial;
 
 class WebsiteAboutController extends Controller
 {
@@ -14,7 +15,8 @@ class WebsiteAboutController extends Controller
     public function index()
     {
         $about = About::query()->first();
-       return view('Website.about.index',compact('about'));
+        $testimonials = Testimonial::query()->get();
+       return view('Website.about.index',compact('about', 'testimonials'));
     }
 
     /**

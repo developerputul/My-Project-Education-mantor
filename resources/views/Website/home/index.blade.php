@@ -5,6 +5,8 @@
 @include('Website.components.homeComponents.hero')
  <!-- ======= About Section ======= -->
 @include('Website.components.homeComponents.about')
+<!-- ======= Testimonials Section ======= -->
+
 
 
 @endsection
