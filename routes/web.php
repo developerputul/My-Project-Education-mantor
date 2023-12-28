@@ -48,7 +48,7 @@ Route::get('about-page', [WebsiteAboutController::class, 'index'])->name('websit
     Route::post ('/testimonial/store', [TestimonialController::class,'store'])->name('testimonial.store');
     Route::get('/testimonial/edit/{id}', [TestimonialController::class, 'edit'])->name('testimonial.edit');
     Route::post('/testimonial/update/{id}', [TestimonialController::class, 'update'])->name('testimonial.update');
-    Route::get('/testimonial/delete/{id}', [TestimonialController::class, 'destroy'])->name('testimonial.delete');
+    Route::get('/testimonial/delete/{id}', [TestimonialController::class, 'delete'])->name('testimonial.delete');
 
     });
 
